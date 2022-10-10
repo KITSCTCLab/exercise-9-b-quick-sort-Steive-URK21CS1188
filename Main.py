@@ -1,7 +1,6 @@
 from typing import List
 
-def quick_sort(data, low, high) -> List[int]:
-    # Write code here
+def partition(array, low, high):
     pivot = array[high]
     i = low - 1
     for j in range(low, high):
